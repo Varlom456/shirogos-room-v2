@@ -5,7 +5,7 @@ services:
       - ./server/.env
     networks:
       - integration
-    # restart: unless-stopped
+    restart: unless-stopped
 
 networks:
   integration:
