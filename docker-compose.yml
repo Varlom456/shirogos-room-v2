@@ -1,19 +1,11 @@
 services:
-  backend:
-    build:
-      context: ./server/
+  shirogo-room:
+    build: .
     env_file:
       - ./server/.env
     networks:
       - integration
-    restart: unless-stopped
-  
-  frontend:
-    build:
-      context: ./client/
-    networks:
-      - integration
-    restart: unless-stopped
+    # restart: unless-stopped
 
 networks:
   integration:
