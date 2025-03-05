@@ -1,0 +1,12 @@
+services:
+  shirogo-room:
+    build: .
+    env_file:
+      - ./server/.env
+    networks:
+      - integration
+    restart: unless-stopped
+
+networks:
+  integration:
+    external: true
