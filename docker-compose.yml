@@ -1,0 +1,18 @@
+services:
+  shirogo-room:
+    build: .
+    env_file:
+      - ./server/.env
+    volumes:
+      - ${STATIC_DIR}:/app/static/:rw
+    networks:
+      - integration
+    ports:
+      - 3000:3000
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+    restart: unless-stopped
+
+networks:
+  integration:
+    external: true
