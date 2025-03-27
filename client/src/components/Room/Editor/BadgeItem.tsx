@@ -52,7 +52,7 @@ const BadgeItem: FC<IBadgeItem> = ({
       onClick={clickHandler}
     >
       <div className='mb-2 flex h-[7rem] items-center justify-center'>
-        <img src={`${import.meta.env.VITE_SERVER_URL}/${img}`} alt={title} />
+        <img src={`/${img}`} alt={title} />
       </div>
 
       <p

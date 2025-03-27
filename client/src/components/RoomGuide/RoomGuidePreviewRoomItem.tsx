@@ -12,7 +12,7 @@ const RoomGuidePreviewRoomItem: FC<IRoomGuidePreviewRoomItem> = ({ room, order }
   return (
     <div
       className={
-        'room-guide-preview-item  flex h-full  flex-col items-center  last-of-type:mr-0' +
+        'room-guide-preview-item mr-[1.3125rem] flex w-[11.5625rem] flex-col items-center last-of-type:mr-0 ' +
         (!!order ? `anim-order-${order}` : '')
       }
     >
@@ -25,14 +25,14 @@ const RoomGuidePreviewRoomItem: FC<IRoomGuidePreviewRoomItem> = ({ room, order }
           profile_img={room.user.profile_img}
           username={room.user.username}
           frame={room.selected_frame}
-          className='aspect-[185/134] w-full cursor-pointer rounded-[1.2rem] object-cover outline outline-[3px] outline-transparent transition-all hover:outline-primary'
+          className='aspect-[185/134] w-full cursor-pointer rounded-[2.3125rem] object-cover outline outline-[3px] outline-transparent transition-all hover:outline-primary'
         />
       </Link>
 
       <p className='order-1 max-w-full truncate px-2 font-secondary text-[0.625rem] font-bold text-[#EBE984] transition-all peer-hover:text-primary'>
         {room.user.username}
       </p>
-      <p className='order-2 mb-1 max-h-12 max-w-full  grow overflow-hidden break-all text-center font-secondary text-xs font-bold leading-4 text-primaryText'>
+      <p className='order-2 mb-1 max-h-12 max-w-full overflow-hidden break-all text-center font-secondary text-xs font-bold leading-4 text-primaryText'>
         Комната «{room.name}»
       </p>
     </div>

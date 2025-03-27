@@ -68,7 +68,7 @@ const EditorImgUpload: FC<IEditorImgUpload> = ({
             !!imgSrc
               ? imgSrc.includes('blob')
                 ? `${imgSrc}`
-                : `${import.meta.env.VITE_SERVER_URL}/${imgSrc}`
+                : `/${imgSrc}`
               : '#'
           }
           alt='avatar'

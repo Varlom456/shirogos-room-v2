@@ -81,7 +81,7 @@ const CustomizationImgUpload: FC<ICustomizationImgUpload> = ({
           !!imgSrc
             ? imgSrc.includes('blob')
               ? `${imgSrc}`
-              : `${import.meta.env.VITE_SERVER_URL}/${imgSrc}`
+              : `/${imgSrc}`
             : '#'
         }
         alt='badge-img'

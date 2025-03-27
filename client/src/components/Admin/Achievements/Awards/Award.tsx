@@ -71,7 +71,7 @@ const Award: FC<IAward> = ({ selectedAwardType, awardType, award, setAward, isNe
             }
           >
             <div className='mr-2 flex max-h-[80%] min-w-[50%] max-w-[50%] items-center justify-center'>
-              <img className='max-h-12' src={`${import.meta.env.VITE_SERVER_URL}/${item.img}`} />
+              <img className='max-h-12' src={`/${item.img}`} />
             </div>
             <p className='max-h-12 flex-1 overflow-y-auto text-center text-xs text-[#FFF]'>
               {item.title}
@@ -93,7 +93,7 @@ const Award: FC<IAward> = ({ selectedAwardType, awardType, award, setAward, isNe
               }
             >
               <div className='mr-2 flex max-h-[80%] min-w-[50%] max-w-[50%] items-center justify-center'>
-                <img className='max-h-12' src={`${import.meta.env.VITE_SERVER_URL}/${item.img}`} />
+                <img className='max-h-12' src={`/${item.img}`} />
               </div>
               <p className='max-h-12 flex-1 overflow-y-auto text-center text-xs text-[#FFF]'>
                 {item.title}

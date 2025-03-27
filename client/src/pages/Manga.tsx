@@ -72,7 +72,7 @@ const Manga: FC = () => {
     const sortedPages = sortPagesByCurrent(pages, +currentPageNum)
     for (const page of sortedPages) {
       try {
-        await loadImage(`${import.meta.env.VITE_SERVER_URL}/${page.page_img}`)
+        await loadImage(`/${page.page_img}`)
         setLoadedPageNumbers((prev) => [...prev, page.page_number])
       } catch (error) {
         console.error(`Failed to load image for page ${page.page_number}:`, error)

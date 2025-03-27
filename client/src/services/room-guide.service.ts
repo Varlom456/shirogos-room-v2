@@ -2,7 +2,7 @@ import { IRoomGuide, IRoomGuideByLevelRes, IRoomGuideRandom } from '@/types/room
 import axios from 'axios'
 
 class RoomGuideService {
-  private URL = `${import.meta.env.VITE_API_URL}/room-guide`
+  private URL = `/api/room-guide`
 
   async getRandomRooms() {
     return await axios.get<IRoomGuideRandom[]>(`${this.URL}/randomRooms`)

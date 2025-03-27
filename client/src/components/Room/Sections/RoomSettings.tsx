@@ -77,7 +77,7 @@ const RoomSettings: FC = () => {
             src={
               isUrl(userInfo.profile_img ?? '')
                 ? userInfo.profile_img
-                : `${import.meta.env.VITE_SERVER_URL}/${userInfo.profile_img}`
+                : `/${userInfo.profile_img}`
             }
             alt='profile-img'
           />
@@ -94,7 +94,7 @@ const RoomSettings: FC = () => {
           profileImg={
             isUrl(userInfo.profile_img ?? '')
               ? userInfo.profile_img
-              : `${import.meta.env.VITE_SERVER_URL}/${userInfo.profile_img}`
+              : `/${userInfo.profile_img}`
           }
         />
         <ChangeProfileImg />

@@ -27,7 +27,7 @@ const BackgroundItem: FC<IBackgroundItem> = ({
     >
       <img
         className='mb-5 w-[88%] rounded-[1.5625rem]'
-        src={`${import.meta.env.VITE_SERVER_URL}/${background.img}`}
+        src={`/${background.img}`}
         alt='bg-img'
       />
       <p className='w-[88%] text-center text-[1.5625rem] leading-[100%] text-primaryText'>

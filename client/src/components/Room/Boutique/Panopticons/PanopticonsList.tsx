@@ -140,7 +140,7 @@ const PanopticonsList: FC = () => {
                         )
                       }
                     )}
-                    src={`${import.meta.env.VITE_SERVER_URL}/${
+                    src={`/${
                       panopticon.miniatureImg ?? panopticon.img
                     }`}
                     alt='panopticon-img'

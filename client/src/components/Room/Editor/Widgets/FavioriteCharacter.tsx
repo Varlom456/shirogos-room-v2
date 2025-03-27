@@ -35,7 +35,7 @@ const FavioriteCharacter: FC<IFavioriteCharacter> = ({ isGuide, guideFavoriteCha
             <div className='aspect-[179/240] w-full rounded-[1.25rem] border-2 border-primaryText bg-tertiary'>
               <img
                 className='pointer-events-none h-full w-full rounded-[1.25rem]'
-                src={`${import.meta.env.VITE_SERVER_URL}/${
+                src={`/${
                   isGuide ? guideFavoriteCharacter?.miniature_img : favoriteCharacter?.miniature_img
                 }`}
               />

@@ -46,7 +46,7 @@ const RoomGuideScreenRoomItem: FC<IRoomGuideScreenRoomItem> = ({ index, room }) 
           <div
             style={{
               backgroundImage: !!room.selected_background
-                ? `url(${import.meta.env.VITE_SERVER_URL}/${room.selected_background?.img})`
+                ? `url(/${room.selected_background?.img})`
                 : "url('/images/room-default-bg.webp')"
             }}
             className='absolute right-0 h-full w-full rounded-[2.3125rem] bg-cover bg-center bg-no-repeat opacity-20 transition-all group-hover:opacity-50'

@@ -34,7 +34,7 @@ const Room = () => {
         <div
           style={{
             backgroundImage: !!roomAppearance.selected_background
-              ? `url(${import.meta.env.VITE_SERVER_URL}/${roomAppearance.selected_background?.img})`
+              ? `url(/${roomAppearance.selected_background?.img})`
               : "url('/images/room-default-bg.webp')"
           }}
           className={cn(`absolute inset-0 -z-20 h-full w-full`, {

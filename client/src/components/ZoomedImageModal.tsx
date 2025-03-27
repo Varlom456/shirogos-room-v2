@@ -18,7 +18,7 @@ const ZoomedImageModal: FC<ZoomedImageModalProps> = ({ img, isVisible, onClose }
       <div className='flex h-[90%] w-[90%] items-center justify-center'>
         {img && (
           <img
-            src={`${import.meta.env.VITE_SERVER_URL}/${img}`}
+            src={`/${img}`}
             alt='img'
             className='h-full w-full object-contain'
           />

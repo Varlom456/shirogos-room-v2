@@ -32,7 +32,7 @@ import $api from '@/http'
 import { IBadge, IBoutiqueBadge } from '@/types/badge.interface'
 
 class RoomContentService {
-  private URL = `${import.meta.env.VITE_API_URL}/room`
+  private URL = `/api/room`
 
   async get() {
     return await $api.get<IRoom>(`${this.URL}`)

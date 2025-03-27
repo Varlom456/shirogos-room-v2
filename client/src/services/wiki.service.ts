@@ -3,7 +3,7 @@ import { ICategory, ICharacter, ICharacterPreview, ICreateCategory } from '@/typ
 import axios from 'axios'
 
 class WikiService {
-  private URL = `${import.meta.env.VITE_API_URL}/wiki`
+  private URL = `/api/wiki`
 
   async createCharacter(character: FormData) {
     return $api.post(`${this.URL}/character`, character)

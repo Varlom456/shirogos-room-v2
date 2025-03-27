@@ -36,7 +36,7 @@ const UserInfoBar: FC<IUserInfoBar> = ({
           <img
             className='h-full w-full rounded-[1.5rem] object-cover'
             src={
-              isUrl(profile_img) ? profile_img : `${import.meta.env.VITE_SERVER_URL}/${profile_img}`
+              isUrl(profile_img) ? profile_img : `/${profile_img}`
             }
             alt='profile-img'
           />

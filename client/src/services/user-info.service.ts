@@ -2,7 +2,7 @@ import $api from '@/http'
 import { IUpdateBirthday, IUpdateGender, IUpdateUsername, IUserInfo } from '@/types/user.interface'
 
 class UserStatsService {
-  private URL = `${import.meta.env.VITE_API_URL}/userInfo`
+  private URL = `/api/userInfo`
 
   async get() {
     return await $api.get<IUserInfo>(this.URL)

@@ -30,7 +30,7 @@ const WikiCharacterItem: FC<WikiCharacterItemProps> = ({ id, name, img, inCatego
               'scale-110': isItemHovered && !inCategory
             }
           )}
-          src={`${import.meta.env.VITE_SERVER_URL}/${img}`}
+          src={`/${img}`}
           alt='character-img'
         />
       ) : (

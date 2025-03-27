@@ -3,7 +3,7 @@ import { IBadge, IBadgeType } from '@/types/badge.interface'
 import axios from 'axios'
 
 class BadgeService {
-  private URL = `${import.meta.env.VITE_API_URL}/badge`
+  private URL = `/api/badge`
 
   async getAll() {
     return axios.get<IBadge[]>(`${this.URL}`)

@@ -3,7 +3,7 @@ import { IAddUserStats, IUserStats } from '@/types/user.interface'
 import axios from 'axios'
 
 class UserStatsService {
-  private URL = `${import.meta.env.VITE_API_URL}/userStats`
+  private URL = `/api/userStats`
 
   async get(id: number | null) {
     return await axios.get<IUserStats>(`${this.URL}/${id}`)

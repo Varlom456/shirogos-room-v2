@@ -3,7 +3,7 @@ import { IUser, IUserProfile, IUserTokens } from '@/types/user.interface'
 import axios from 'axios'
 
 class UserService {
-  private URL = `${import.meta.env.VITE_API_URL}/user`
+  private URL = `/api/user`
 
   async get() {
     return await $api.get<IUserTokens | undefined>(this.URL)

@@ -3,10 +3,14 @@ import axios from 'axios'
 
 const $api = axios.create({
   withCredentials: true,
-  baseURL: import.meta.env.VITE_API_URL
+  baseURL: "/api/"
 })
 
 $api.interceptors.request.use((config) => {
+  // there is possible /api/api/ duplication due to incosistent use of axios
+  if (config.url != undefined && config.url.startsWith('/api/')) {
+    config.url = config.url.replace(/^\/api\//, '/');
+  }
   config.headers.Authorization = `Bearer ${localStorage.getItem('token')}`
   return config
 })

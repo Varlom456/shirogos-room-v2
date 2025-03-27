@@ -27,7 +27,7 @@ const WikiCard: FC<IWikiCard> = ({ name, img, subtitle, subsubtitle, isSidebarOp
         {!!img ? (
           <img
             className='w-[22.5rem] rounded-[2.3125rem]'
-            src={`${import.meta.env.VITE_SERVER_URL}/${img}`}
+            src={`/${img}`}
             alt={`${name}-img`}
           />
         ) : (

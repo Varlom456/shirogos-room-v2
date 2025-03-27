@@ -8,7 +8,7 @@ import {
 import axios from 'axios'
 
 class DonateService {
-  private URL = `${import.meta.env.VITE_API_URL}/chronicle`
+  private URL = `/api/chronicle`
 
   async getAll() {
     return axios.get<IChronicle[]>(this.URL)

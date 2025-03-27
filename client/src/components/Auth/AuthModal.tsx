@@ -25,7 +25,7 @@ const AuthModal: FC<IAuthModal> = ({ visible, setVisible }) => {
   }
 
   const clickAuthTwitch = () => {
-    window.location.href = `${import.meta.env.VITE_API_URL}/auth/twitch`
+    window.location.href = `/api/auth/twitch`
   }
 
   const clickAuthVk = () => {

@@ -79,14 +79,14 @@ const PanopticonPreview: FC<IPanopticonPreview> = ({ isVisible, setIsVisible, pa
         <img
           ref={imgRef}
           className={(isVerticalImg ? 'rounded-[1.5625rem]' : '') + ' absolute z-20 max-h-full'}
-          src={`${import.meta.env.VITE_SERVER_URL}/${panopticon?.Panopticon.img}`}
+          src={`/${panopticon?.Panopticon.img}`}
         />
         <img
           className={
             (isVerticalImg ? 'hidden' : 'block') +
             ' absolute h-full rounded-[1.5625rem] object-cover opacity-20'
           }
-          src={`${import.meta.env.VITE_SERVER_URL}/${panopticon?.Panopticon.img}`}
+          src={`/${panopticon?.Panopticon.img}`}
         />
       </div>
     </div>

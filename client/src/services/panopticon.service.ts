@@ -3,7 +3,7 @@ import { IPanopticon } from '@/types/panopticon.interface'
 import axios from 'axios'
 
 class PanopticonService {
-  private URL = `${import.meta.env.VITE_API_URL}/panopticon`
+  private URL = `/api/panopticon`
 
   async getAll() {
     return axios.get<IPanopticon[]>(`${this.URL}`)

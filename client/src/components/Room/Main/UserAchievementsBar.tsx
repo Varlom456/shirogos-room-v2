@@ -44,7 +44,7 @@ const UserAchievementsBar: FC<IUserAchievementsBar> = ({
                 className='relative z-0 mb-[0.3125rem] flex aspect-[213/30] w-[91%] items-center justify-center rounded-[1.5625rem] bg-black last-of-type:mb-0'
               >
                 <img
-                  src={`${import.meta.env.VITE_SERVER_URL}/${achievement.background}`}
+                  src={`/${achievement.background}`}
                   className='pointer-events-none absolute h-full w-full select-none rounded-[1.5625rem] opacity-50'
                 />
                 <p className='z-10 line-clamp-1 max-h-full max-w-full overflow-hidden break-words px-4 text-center text-[0.9375rem] text-primaryText'>

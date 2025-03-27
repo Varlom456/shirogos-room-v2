@@ -40,9 +40,8 @@ const WikiReader: FC = () => {
             />
             <div
               style={{
-                backgroundImage: `linear-gradient(to right, #323232 43.23%, #181818 100%),  url(${
-                  import.meta.env.VITE_SERVER_URL
-                }/${character?.original_img})`
+                backgroundImage: `linear-gradient(to right, #323232 43.23%, #181818 100%),  url(
+                /${character?.original_img})`
               }}
               className='relative mt-[5.25rem] flex min-h-screen justify-center bg-cover bg-no-repeat pb-[4.7rem] pt-[4.45rem]'
             >
@@ -56,9 +55,8 @@ const WikiReader: FC = () => {
               <WikiInfoList descriptions={character.characterDescriptions} />
               <div
                 style={{
-                  backgroundImage: `url(${
-                    import.meta.env.VITE_SERVER_URL
-                  }/${character?.original_img})`
+                  backgroundImage: `url(
+                  /${character?.original_img})`
                 }}
                 className='absolute inset-0 h-full w-full bg-cover bg-[3.8vw_35%] bg-no-repeat opacity-25'
               />

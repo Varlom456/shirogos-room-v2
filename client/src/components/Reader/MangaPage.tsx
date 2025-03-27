@@ -14,7 +14,7 @@ const MangaPage: FC<MangaPageProps> = ({ mangaWidth, img, isLoading }) => {
   useLayoutEffect(() => {
     if (!img) return
     window.requestAnimationFrame(() => {
-      imgRef.current?.setAttribute('src', `${import.meta.env.VITE_SERVER_URL}/${img}`)
+      imgRef.current?.setAttribute('src', `/${img}`)
       window.scrollTo(0, 0)
     })
   }, [img])

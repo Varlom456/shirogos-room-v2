@@ -324,7 +324,7 @@ const EditorElement: FC<IEditorElement> = ({
             <div className='handle flex h-full w-full items-center justify-center'>
               <img
                 className='pointer-events-none h-full w-full object-contain'
-                src={`${import.meta.env.VITE_SERVER_URL}/${badge_img}`}
+                src={`/${badge_img}`}
                 alt='badge'
               />
             </div>

@@ -8,7 +8,7 @@ import {
 import axios from 'axios'
 
 class UniqueRoleService {
-  private URL = `${import.meta.env.VITE_API_URL}/uniqueRole`
+  private URL = `/api/uniqueRole`
 
   async getAll(type: UniqueRoleType) {
     return axios.get<IUniqueRole[]>(`${this.URL}?type=${type}`)

@@ -38,7 +38,7 @@ const ChronicleEventsItem: FC<IChronicleEventsItem> = ({
       <div className='h-[2.875rem] w-[2.875rem] border-[1px] border-[#FFF] bg-primaryText bg-opacity-10'>
         {img && (
           <img
-            src={`${import.meta.env.VITE_SERVER_URL}/${img}`}
+            src={`/${img}`}
             alt='chronicles-img'
             className='h-full w-full'
           />

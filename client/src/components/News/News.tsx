@@ -61,7 +61,7 @@ const News: FC<NewsProps> = ({ className }) => {
         <>
           <img
             className='h-full w-[11.75rem] rounded-[2.3125rem] object-cover'
-            src={`${import.meta.env.VITE_SERVER_URL}/${news?.news_img}`}
+            src={`/${news?.news_img}`}
             alt='announce-img'
           />
           {isTextOverflow ? (

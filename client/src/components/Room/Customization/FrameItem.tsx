@@ -34,7 +34,7 @@ const FrameItem: FC<IFrameItem> = ({ frame, selectedFrame, setSelectedFrame }) =
       onClick={clickFrame}
     >
       <img
-        src={`${import.meta.env.VITE_SERVER_URL}/${frame.img}`}
+        src={`/${frame.img}`}
         alt='frame'
         className='aspect-[104/83] h-[4.90625rem]'
       />

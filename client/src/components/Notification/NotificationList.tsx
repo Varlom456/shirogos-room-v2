@@ -43,7 +43,7 @@ const NotificationList: FC<NotificationListProps> = ({ notifications }) => {
           >
             {notification.img && (
               <img
-                src={`${import.meta.env.VITE_SERVER_URL}/${notification.img}`}
+                src={`/${notification.img}`}
                 alt='notification-img'
                 className='h-full w-full rounded-[0.4375rem] object-cover'
               />

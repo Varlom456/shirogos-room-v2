@@ -74,7 +74,7 @@ const Guide: FC = () => {
           <div
             style={{
               backgroundImage: !!guideRoom.roomAppearance.selected_background
-                ? `url(${import.meta.env.VITE_SERVER_URL}/${guideRoom.roomAppearance
+                ? `url(/${guideRoom.roomAppearance
                     .selected_background?.img})`
                 : "url('/images/room-default-bg.webp')"
             }}

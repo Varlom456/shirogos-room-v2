@@ -2,7 +2,7 @@ import { IAlmanac } from '@/types/almanac.interface'
 import axios from 'axios'
 
 class AlmanacService {
-  private URL = `${import.meta.env.VITE_API_URL}/almanac`
+  private URL = `/api/almanac`
 
   async getCurrentBirthdays(date: Date) {
     const currentDateArr = date.toLocaleDateString('en-US').split('/')

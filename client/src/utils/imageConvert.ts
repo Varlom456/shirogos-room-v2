@@ -1,5 +1,5 @@
 const toDataURL = async (url: string): Promise<string | ArrayBuffer | null> => {
-  return await fetch(`${import.meta.env.VITE_SERVER_URL}/${url}`)
+  return await fetch(`/${url}`)
     .then((response) => response.blob())
     .then(
       (blob) =>

@@ -8,7 +8,7 @@ import {
 import axios from 'axios'
 
 class ManualTaskService {
-  private URL = `${import.meta.env.VITE_API_URL}/manual-task`
+  private URL = `/api/manual-task`
 
   async getAll() {
     return axios.get<IManualTask[]>(`${this.URL}`)

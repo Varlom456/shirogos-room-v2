@@ -21,7 +21,7 @@ const TaskQueueItem: FC<TaskQueueItemProps> = ({ response, setZoomedImg }) => {
       <div className='flex h-full w-[30%] items-center justify-center'>
         {!!response.img ? (
           <img
-            src={`${import.meta.env.VITE_SERVER_URL}/${response.img}`}
+            src={`/${response.img}`}
             alt='response-screen'
             className='h-[4.625rem] w-[70%] cursor-zoom-in object-contain'
             onClick={() => setZoomedImg(response.img)}

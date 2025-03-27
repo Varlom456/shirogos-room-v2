@@ -62,7 +62,7 @@ const AchieveBg: FC<IAchieveBg> = ({ selectedAwardType, imgSrc, img, setImg }) =
           !!imgSrc
             ? imgSrc.includes('blob')
               ? `${imgSrc}`
-              : `${import.meta.env.VITE_SERVER_URL}/${imgSrc}`
+              : `/${imgSrc}`
             : '#'
         }
         alt='award-img'

@@ -69,7 +69,7 @@ const Context: FC<PropsWithChildren> = ({ children }) => {
 
   const logout = async () => {
     await axios
-      .get(`${import.meta.env.VITE_API_URL}/user/logout`, {
+      .get(`/api/user/logout`, {
         withCredentials: true
       })
       .then(() => {

@@ -3,7 +3,7 @@ import { IFrame } from '@/types/frame.interface'
 import axios from 'axios'
 
 class FrameService {
-  private URL = `${import.meta.env.VITE_API_URL}/frame`
+  private URL = `/api/frame`
 
   async getAll() {
     return axios.get<IFrame[]>(`${this.URL}`)

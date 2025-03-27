@@ -144,7 +144,7 @@ const CusomizationItem: FC<CusomizationItemProps> = ({ create, update, remove, i
 				{!!customizationItem.miniature && <div className='flex h-full w-[10%] items-center justify-center relative'>
 					<>
 						<img
-							src={`${import.meta.env.VITE_SERVER_URL}/${customizationItem.miniature.src}`}
+							src={`/${customizationItem.miniature.src}`}
 							alt='miniature-img'
 							className={cn('rounded-[1.5625rem] invisible opacity-0 absolute', {
 								'visible opacity-100': customizationItem.miniature.src && !customizationItem.miniature.isNew,

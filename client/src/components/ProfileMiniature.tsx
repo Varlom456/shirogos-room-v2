@@ -1,8 +1,8 @@
-import noProfilePic from '@/assets/no-profile-picture-icon.webp'
-import { IFrame } from '@/types/frame.interface'
-import { cn } from '@/utils/cn'
-import { isUrl } from '@/utils/isUrl'
 import { FC } from 'react'
+import noProfilePic from '@/assets/no-profile-picture-icon.webp'
+import { isUrl } from '@/utils/isUrl'
+import { cn } from '@/utils/cn'
+import { IFrame } from '@/types/frame.interface'
 
 interface IProfileMiniature {
   miniature_img: string | null
@@ -28,33 +28,20 @@ const ProfileMiniature: FC<IProfileMiniature> = ({
       <img
         className={cn('object-cover', className)}
         src={
-          miniature_img
-            ? `${miniature_img}`
-            : profile_img
+          !!miniature_img
+            ? `/${miniature_img}`
+            : !!profile_img
             ? isUrl(profile_img)
               ? profile_img
-              : `${profile_img}`
+              : `/${profile_img}`
             : noProfilePic
         }
         alt={`${username}-pic`}
       />
-      {/* <img
-        className={cn('object-cover', className)}
-        src={
-          miniature_img
-            ? `${import.meta.env.VITE_SERVER_URL}/${miniature_img}`
-            : profile_img
-            ? isUrl(profile_img)
-              ? profile_img
-              : `${import.meta.env.VITE_SERVER_URL}/${profile_img}`
-            : noProfilePic
-        }
-        alt={`${username}-pic`}
-      /> */}
       {!!frame && (
         <img
-          className='pointer-events-none absolute -top-[18px] right-[48px] z-10 w-[calc(100%)]  min-w-[calc(100%)] max-w-[calc(100%)] scale-[70%] select-none'
-          src={`${import.meta.env.VITE_SERVER_URL}/${frame.img}`}
+          className='pointer-events-none absolute -right-[2px] -top-[2px] z-10 aspect-[104/83] w-[calc(100%+14px)] min-w-[calc(100%+14px)] max-w-[calc(100%+14px)] select-none'
+          src={`/${frame.img}`}
           alt='frame'
         />
       )}

@@ -12,7 +12,7 @@ import {
 import axios from 'axios'
 
 class OrderService {
-  private URL = `${import.meta.env.VITE_API_URL}/order`
+  private URL = `/api/order`
 
   async getOrderTypes() {
     return await axios.get<IOrderType[]>(`${this.URL}/type`)

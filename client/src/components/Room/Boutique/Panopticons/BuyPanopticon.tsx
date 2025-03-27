@@ -58,7 +58,7 @@ const BuyPanopticon: FC<IBuyPanopticon> = ({
         <div className='relative mb-4 flex aspect-[236/200] w-[12.8125rem] items-center justify-center rounded-[1.5625rem] border-4 border-[#EBE984] bg-tertiary'>
           <img
             className='h-full w-full rounded-[1.5625rem] opacity-10 blur-[2px]'
-            src={`${import.meta.env.VITE_SERVER_URL}/${
+            src={`/${
               panopticon?.miniatureImg ?? panopticon?.img
             }`}
             alt='panopticon-img'

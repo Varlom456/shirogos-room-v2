@@ -3,7 +3,7 @@ import { IAchievementFetch, IAchievementFetchWithAward } from '@/types/achieveme
 import axios from 'axios'
 
 class AchievementService {
-  private URL = `${import.meta.env.VITE_API_URL}/achievement`
+  private URL = `/api/achievement`
 
   async getAll() {
     return await axios.get<IAchievementFetchWithAward[]>(`${this.URL}/all`)

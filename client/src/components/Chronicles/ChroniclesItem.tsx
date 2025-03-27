@@ -26,7 +26,7 @@ const ChroniclesItem: FC<IChroniclesItem> = ({ day, prefix, text, img }) => {
         )}
         {img && (
           <img
-            src={`${import.meta.env.VITE_SERVER_URL}/${img}`}
+            src={`/${img}`}
             className='h-[2.875rem] w-[2.875rem]'
             alt='chronicle-img'
           />

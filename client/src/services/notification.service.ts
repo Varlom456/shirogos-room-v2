@@ -2,7 +2,7 @@ import $api from '@/http'
 import { IUserNotifications } from '@/types/notifications.interface'
 
 class NotificationService {
-  private URL = `${import.meta.env.VITE_API_URL}/notification`
+  private URL = `/api/notification`
 
   async getUserNotifications() {
     return $api.get<IUserNotifications>(`${this.URL}`)

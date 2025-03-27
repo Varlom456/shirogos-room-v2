@@ -44,7 +44,7 @@ const DangotekaSectionItem: FC<IDangotekaSectionItem> = ({
         >
           <img
             className='h-full w-full rounded-[2.3125rem] object-cover'
-            src={`${import.meta.env.VITE_SERVER_URL}/${img}`}
+            src={`/${img}`}
             alt='manga-img'
           />
         </Link>

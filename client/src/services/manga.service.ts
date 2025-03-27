@@ -3,7 +3,7 @@ import { IManga, IMangaGeneral, IMangaReader } from '@/types/manga.interface'
 import axios from 'axios'
 
 class MangaService {
-  private URL = `${import.meta.env.VITE_API_URL}/manga`
+  private URL = `/api/manga`
 
   async create(manga: FormData) {
     return $api.post(this.URL, manga)

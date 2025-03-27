@@ -22,7 +22,7 @@ const BadgeItem: FC<IBadgeItem> = ({ badge, buyedBadges, activeBadge, setActiveB
     >
       <div className='mr-[0.62rem] flex max-h-[7rem] min-h-[7rem] w-1/2 items-center justify-center'>
         <img
-          src={`${import.meta.env.VITE_SERVER_URL}/${badge.img}`}
+          src={`/${badge.img}`}
           alt='badge-img'
           className='max-h-[7rem] min-h-[7rem] object-contain'
         />

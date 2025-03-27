@@ -3,7 +3,7 @@ import $api from '@/http'
 import { IStory, IStoryGeneral } from '@/types/story.interface'
 
 class StoryService {
-  private URL = `${import.meta.env.VITE_API_URL}/story`
+  private URL = `/api/story`
 
   async create(story: FormData) {
     return $api.post(this.URL, story)

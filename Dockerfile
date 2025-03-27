@@ -10,9 +10,6 @@ RUN pnpm install
 
 COPY client .
 
-ENV VITE_SERVER_URL=""
-ENV VITE_API_URL "/api"
-
 RUN pnpm run build
 
 

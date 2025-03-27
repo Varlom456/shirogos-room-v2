@@ -13,7 +13,6 @@ async function bootstrap() {
   process.env.TZ = 'Europe/Moscow';
 
   app.enableCors({
-    origin: process.env.CLIENT_URL,
     credentials: true,
   });
   app.use(cookieParser());

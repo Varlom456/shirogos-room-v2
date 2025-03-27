@@ -3,7 +3,7 @@ import { INews, INewsCount } from '@/types/news.interface'
 import axios from 'axios'
 
 class NewsService {
-  private URL = `${import.meta.env.VITE_API_URL}/news`
+  private URL = `/api/news`
 
   async getOne(skip: number) {
     return axios.get<INews>(`${this.URL}?skip=${skip}`)

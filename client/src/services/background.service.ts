@@ -3,7 +3,7 @@ import { IBackground } from '@/types/background.interface'
 import axios from 'axios'
 
 class BackgroundService {
-  private URL = `${import.meta.env.VITE_API_URL}/background`
+  private URL = `/api/background`
 
   async getAll() {
     return axios.get<IBackground[]>(`${this.URL}`)
